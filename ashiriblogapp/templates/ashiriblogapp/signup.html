@@ -1,0 +1,36 @@
+
+{% extends "ashiriblogapp/base.html" %}
+{% load crispy_forms_tags%}
+
+
+{% block title %}Ashriblog signup{% endblock %}
+
+
+{% block style %}
+	<style>
+			.register_style{
+				width: 500px;
+				margin: auto;
+
+		}
+	</style>
+
+{% endblock %}
+
+
+{% block body %}
+
+	<div class="container mt-4 register_style ">
+		<h2>Create New Account</h2>
+		<form action="" method="post">
+				{% csrf_token %} 
+				{{user_form | crispy}}
+
+			<input type="submit" value="Create" class="btn btn-success">
+
+		</form>
+
+
+	</div>
+{% endblock %}
+

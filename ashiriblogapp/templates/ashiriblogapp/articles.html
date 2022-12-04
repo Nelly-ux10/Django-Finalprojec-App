@@ -1,0 +1,42 @@
+{% extends "ashiriblogapp/base.html" %}
+
+
+
+{% block title%} Ashiriblog List {% endblock %}
+
+
+{% block style %}
+	<style>
+			.link-style{
+				text-decoration: none;
+				color: black;
+
+		}
+		.link-style:hover{
+				text-decoration: none;
+				color: rgb(183, 69, 151);
+
+		}
+		body{
+				background-color: rgb(246, 213, 213);
+			}
+	</style>
+	
+
+{% endblock %}
+
+{% block body %}
+	<div class="container mt-4">
+			{% for blog in article_list %}
+				<span class="badge rounded-pill bg-success">Authors: {{blog.author}}</span>
+				<h4 ><a class="link-style" href="{% url 'article_detail' blog.slug %}">{{blog.title}}</a></h4>
+			
+
+			{% endfor %}
+
+			{% include 'ashiriblogapp/pagination.html' with page=article_list %}
+		</div>
+
+
+
+{% endblock %}

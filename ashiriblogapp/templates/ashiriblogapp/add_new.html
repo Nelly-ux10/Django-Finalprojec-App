@@ -1,0 +1,33 @@
+{% extends "ashiriblogapp/base.html" %}
+{% load crispy_forms_tags%}
+
+
+{% block title%} Add new comment {% endblock %}
+
+{% block style %}
+	<style>
+			.article_style{
+				width: 500px;
+				margin: auto;
+
+		}
+	</style>
+
+{% endblock %}
+
+{% block body %}
+	<div class="container mt-4 article_style">
+			<h3> What is New?</h3>
+			
+			<form action	= "" method="post">
+					{% csrf_token %} 
+
+					{{article_form | crispy}}
+					
+
+					<input type="submit" value="Add" class="btn btn-success">
+			</form>
+
+
+		</div>
+{% endblock %}

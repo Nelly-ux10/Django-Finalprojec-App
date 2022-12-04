@@ -1,0 +1,31 @@
+{% extends "ashiriblogapp/base.html" %}
+
+
+
+
+<title>{% block title %} Ashiriblog Information {% endblock %}</title>
+
+
+{% block style %}
+	<style>
+	
+ </style>
+
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+			<h2>{{detail.title}}</h2>
+			<h5>Published {{detail.published}} by: <i>{{detail.author}}</i></h5>
+			<br>
+			
+				<p>{{detail.description}}</p>
+
+				{% if request.user == detail.author %}
+				<a class="btn btn-danger mx-3 mt-3" href="{% url 'delete_article' detail.slug %}"> Delete</a>
+				<a class="btn btn-success mx-3 mt-3" href="{% url 'update_article' detail.slug %}"> Update</a>
+				{% endif %}
+
+			
+		</div>
+{% endblock %} <!--end block for body-->
