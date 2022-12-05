@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from .import views 
 from .views import article_list, article_detail, user_login, register, add_article, update_article,delete_article
@@ -16,4 +16,5 @@ urlpatterns = [
 		path('delete/<slug:slug>/', views.delete_article, name='delete_article'),
 		path('password-change/', PasswordChangeView.as_view(), name='password-change'),
 		path('password-change/done/', PasswordChangeDoneView.as_view(), name='password_change_done'),
+		path('social-auth/', include('ashiriblogapp/social_django', namespace = 'social')),
 ]
