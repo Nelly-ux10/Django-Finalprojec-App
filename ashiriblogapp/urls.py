@@ -16,5 +16,5 @@ urlpatterns = [
 		path('delete/<slug:slug>/', views.delete_article, name='delete_article'),
 		path('password-change/', PasswordChangeView.as_view(), name='password-change'),
 		path('password-change/done/', PasswordChangeDoneView.as_view(), name='password_change_done'),
-		path('social-auth/', include('ashiriblogapp/social_django,urls', namespace = 'social')),
+		path('social-auth/', include('social_django,urls', namespace = 'social')),
 ]
