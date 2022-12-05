@@ -91,28 +91,6 @@ DATABASES = {
     }
 }
 
-#adding social authentication
-AUTHENTICATION_BACKENDS =[
-		'social_core.backends.facebook.FacebookOAuth2',
-		'social_core.backends.github.GithubOAuth2',
-		#'social_core.backends.linkedin.LinkedinOAuth2',
-
-		'django.contrib.auth.backends.ModelBackend',
-
-]
-
-#facebook
-SOCIAL_AUTH_FACEBOOK_KEY = '1192264501672247' #facebook app id
-SOCIAL_AUTH_FACEBOOK_SECRET = 'f66370b46f60d0d7f4ec3909c104bfdc' #facebook app secret
-
-#github
-SOCIAL_AUTH_GITHUB_KEY = '87479fa30e6635a0a48c' # github id
-SOCIAL_AUTH_GITHUB_KEY = 'd90c3c6fe6dda439d813902c7918d661aeedbe83'  # github secret id
-
-#linkedin
-#SOCIAL_AUTH_LINKEDIN_KEY = '868r0uwczhyt1v' #client id
-#SOCIAL_AUTH_LINKEDIN_KEY = 'OGLmPiuLdPZfdttL'  #client secret
-
 
 
 # Password validation
