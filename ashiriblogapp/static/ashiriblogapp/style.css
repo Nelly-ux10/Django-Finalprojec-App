@@ -60,7 +60,4 @@ max-width: 100%;
 }
 
 
-#img{
-	background: url("{% static 'ashiriblogapp/images/people.jpg' %}");
-}
 
