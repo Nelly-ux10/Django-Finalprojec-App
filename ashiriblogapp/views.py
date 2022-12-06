@@ -6,6 +6,10 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+def about(request):
+		context = {}
+		return render(request, 'ashiriblogapp/about.html', context)
+
 
 def article_list(request):
 		article_list = blogs.objects.all().order_by('published')

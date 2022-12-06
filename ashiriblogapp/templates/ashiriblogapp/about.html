@@ -1,0 +1,39 @@
+{% extends "ashiriblogapp/base.html" %}
+{% load static %}
+
+{% block title%} Ashiri2.0 Homepage {% endblock %}
+
+
+{% block style %}
+	<style>
+			.about_style{
+				width: 500px;
+				margin: auto;
+
+		}
+	</style>
+
+{% endblock %}
+
+
+{% block body%}
+		<div class="container  mt-4">
+			<img src="{% static 'ashiriblogapp/images/Gossip.jpg' %}" class=" about_style"  >
+						<!--<img src="images/Ashiri-logos__transparent.png" id="logo">-->
+
+
+			<h3>An online community for reporting rummor around health</h3>
+			<p>
+				What disturbing or pressing news did you hear today? has this been speculating for long and you are unsure about this
+				type of news? 
+			</p>
+			<p>
+				Join our online community and help the government of sieera leone to track and address malicious health rumors that are been spread everyday.  
+				feel free to discuss any news or information of concern spreading within the nation.
+				See what others has to say about it and understand how public experts are adressing specific news of concern and are keeping the public safe 
+				from malicious information that targets public well being and impacts emergency response activities.
+				learn more on how certain information can inpact our health and retract from spreading them more further. 
+			</p>
+		</div>
+
+{% endblock %}

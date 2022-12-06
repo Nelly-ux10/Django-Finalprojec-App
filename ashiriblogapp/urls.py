@@ -1,12 +1,13 @@
 from django.urls import path, include
 
 from .import views 
-from .views import article_list, article_detail, user_login, register, add_article, update_article,delete_article
+from .views import article_list, article_detail, user_login, register, add_article, update_article,delete_article, about
 from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView, PasswordChangeDoneView
 
 
 urlpatterns = [
-		path('', views.article_list, name='article_list'), 
+		path('', views.about, name='about'), 
+		path('articles/', views.article_list, name='article_list'), 
 		path('article_detail/<slug:slug>/', views.article_detail, name='article_detail'),
 		path('login/', LoginView.as_view(), name='user_login'), 
 		path('logout/', LogoutView.as_view(), name='user_logout'), 

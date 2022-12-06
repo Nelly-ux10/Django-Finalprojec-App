@@ -1,5 +1,5 @@
 {% extends "ashiriblogapp/base.html" %}
-
+{% load static %}
 
 
 {% block title%} Ashiriblog List {% endblock %}
@@ -19,6 +19,9 @@
 		}
 		body{
 				background-color: rgb(246, 213, 213);
+				background: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
+				background-repeat: no-repeat;
+				background-size: 100%;
 			}
 	</style>
 	
