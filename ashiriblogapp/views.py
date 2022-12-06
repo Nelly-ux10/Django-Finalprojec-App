@@ -71,7 +71,7 @@ def register(request):
 
 
 
-@login_required
+#@login_required
 def add_article(request):
 		if request.method == "POST":
 			article_form = BlogRegistrationForm(request.POST)
