@@ -30,7 +30,6 @@
 {% endblock %}
 
 {% block body %}
-<body>
 	
 	<div class="container mt-4">
 			{% for blog in article_list %}
@@ -43,6 +42,4 @@
 			{% include 'ashiriblogapp/pagination.html' with page=article_list %}
 		</div>
 
-
-</body>
 {% endblock %}
