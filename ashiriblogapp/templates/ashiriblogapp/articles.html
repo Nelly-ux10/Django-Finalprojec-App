@@ -22,7 +22,7 @@
 				background: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
 				background-repeat: no-repeat;
 				background-size: 100%;
-				opacity: 0.5;
+				opacity: 0.2;
 			}
 	</style>
 	
@@ -30,6 +30,8 @@
 {% endblock %}
 
 {% block body %}
+<body>
+	
 	<div class="container mt-4">
 			{% for blog in article_list %}
 				<span class="badge rounded-pill bg-success">Authors: {{blog.author}}</span>
@@ -42,5 +44,5 @@
 		</div>
 
 
-
+</body>
 {% endblock %}
