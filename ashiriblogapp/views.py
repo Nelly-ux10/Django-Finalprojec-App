@@ -14,7 +14,7 @@ def about(request):
 def article_list(request):
 		article_list = blogs.objects.all().order_by('published')
 
-		paginator = Paginator(article_list, 5)
+		paginator = Paginator(article_list, 10)
 		page = request.GET.get('page')
 
 		try:
