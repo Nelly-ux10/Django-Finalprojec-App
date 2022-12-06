@@ -17,13 +17,13 @@
 				color: rgb(183, 69, 151);
 
 		}
-		/*.page{
+		body{
 				background-color: rgb(246, 213, 213);
 				background-image: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
 				background-image: no-repeat;
 				background-image: 100%;
 				opacity: 0.3;
-			}*/
+			}
 	</style>
 	
 
@@ -33,7 +33,6 @@
 <body>
 	
 	<div class="container mt-4">
-	<img src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="Snow" style="width:100%;" >
 			{% for blog in article_list %}
 				<span class="badge rounded-pill bg-success">Authors: {{blog.author}}</span>
 				<h4 ><a class="link-style" href="{% url 'article_detail' blog.slug %}">{{blog.title}}</a></h4>
