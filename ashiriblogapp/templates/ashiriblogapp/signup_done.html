@@ -17,11 +17,13 @@
 {% endblock %}
 
 {% block body %}
+<body>
+
 	<div class="container">
 		<h3>Welcome, {{new_user.username}}</h3>
 		<p>Your account has been create, you can  <a href="{% url 'user_login' %}">Login here</a></p>
 
 	</div>
-
+</body>
 
 {% endblock %}

@@ -7,15 +7,14 @@
 {% block style %}
 	<style>
 			.about_style{
-				width: 500px;
-				margin: auto;
-				float: left;
+				width: 75%;
+				float: right;
+				max-height: 25vh;
 
 		}
 		.logo{
-				width: 300px;
-				margin: auto;
-				float: right;
+				max-width: 25%;
+				max-height: 25vh;
 
 		}
 	</style>
@@ -28,9 +27,8 @@
 			<div>
 					<img src="{% static 'ashiriblogapp/images/Gossip.jpg' %}" class=" about_style"  >
 					<img src="{% static 'ashiriblogapp/images/Ashiri-logos__transparent.png' %}" class="logo">
-			</div>
-			<div>
-						<h3>An online community for reporting rummor around health</h3>
+
+					<h3>An online community for reporting rummor around health</h3>
 						<p>
 							What disturbing or pressing news do you have today? has this been speculating for long and you are unsure about this
 							type of news or information? 
@@ -41,8 +39,14 @@
 							See what others has to say about it and understand how public experts are adressing specific news of concern and are keeping the public safe 
 							from malicious information that targets public well being and impacts emergency response activities.
 							learn more on how certain information can inpact our health and retract from spreading them more further. 
+
+
+
+			
+			
+						
 						</p>
-			</div>
+		
 		</div>
 
 {% endblock %}
