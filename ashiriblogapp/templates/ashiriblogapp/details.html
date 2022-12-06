@@ -12,7 +12,7 @@
 			background: url("{% static 'ashiriblogapp/images/Ashiri-logos__transparent.png' %}");
 			background-repeat: no-repeat;
 			background-size: 20%;
-			background-position: 50% 20%; 
+			background-position: 50% 5%; 
 		}
  </style>
 
@@ -30,7 +30,7 @@
 				<a class="btn btn-danger mx-3 mt-3" href="{% url 'delete_article' detail.slug %}"> Delete</a>
 				<a class="btn btn-success mx-3 mt-3" href="{% url 'update_article' detail.slug %}"> Update</a>
 				{% endif %}
-
+				<a class="btn btn-info mx-3 mt-3" href="#"> Drop Comment</a>
 			
 		</div>
 {% endblock %} <!--end block for body-->
