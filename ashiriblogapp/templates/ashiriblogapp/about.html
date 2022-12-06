@@ -17,6 +17,14 @@
 				max-height: 25vh;
 
 		}
+		#footer-menu>a{
+    margin: 5px;
+
+	}
+	#footer-menu{
+			float: right;
+
+	}
 	</style>
 
 {% endblock %}
@@ -27,7 +35,7 @@
 			
 					<img src="{% static 'ashiriblogapp/images/Gossip.jpg' %}" class=" about_style"  >
 					<img src="{% static 'ashiriblogapp/images/Ashiri-logos__transparent.png' %}" class="logo">
-				<div class="content mt-3">
+				<div class="content mt-5">
 					<h3>An online blog community for reporting rummor around health</h3>
 						<p>
 							What disturbing or pressing news do you have today? has this been speculating for long and you are unsure about this
@@ -44,5 +52,12 @@
 				</div>
 		
 		</div>
+
+		<div id="footer">
+		<div id="footer-menu">
+			<a href="#" >Terms & conditions</a> |
+			<a href="#">Privacy policy</a>         
+		</div>     
+	</div>
 
 {% endblock %}

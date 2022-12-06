@@ -31,8 +31,9 @@
 
 {% block body %}
 <body>
-	<img class="page" src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="">
+	
 	<div class="container mt-4">
+	<img class="page" src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="">
 			{% for blog in article_list %}
 				<span class="badge rounded-pill bg-success">Authors: {{blog.author}}</span>
 				<h4 ><a class="link-style" href="{% url 'article_detail' blog.slug %}">{{blog.title}}</a></h4>
