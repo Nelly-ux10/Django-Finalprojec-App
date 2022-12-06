@@ -5,12 +5,12 @@
 {% block title %}Ashriblog signup done{% endblock %}
 {% block style %}
 <style>
-		body{
+		.page{
 						background-color: rgb(246, 213, 213);
 						background: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
 						background-repeat: no-repeat;
 						background-size: 100%;
-						opacity: 0.2;
+						opacity: 0.3;
 					}
 
 </style>
@@ -18,7 +18,7 @@
 
 {% block body %}
 <body>
-
+<img class="page" src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="">
 	<div class="container">
 		<h3>Welcome, {{new_user.username}}</h3>
 		<p>Your account has been create, you can  <a href="{% url 'user_login' %}">Login here</a></p>

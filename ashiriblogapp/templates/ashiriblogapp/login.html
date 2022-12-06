@@ -11,12 +11,12 @@
 				margin: auto;
 
 		}
-body{
+.page{
 				background-color: rgb(246, 213, 213);
-				background: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
-				background-repeat: no-repeat;
-				background-size: 100%;
-				opacity: 0.2;
+				background-image: url("{% static 'ashiriblogapp/images/black image.jpg' %}");
+				background-image: no-repeat;
+				background-image: 100%;
+				opacity: 0.3;
 			}
 	</style>
 
@@ -25,7 +25,7 @@ body{
 
 {% block body%}
 	<body>
-		
+		<img class="page" src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="">
 		<div class="container mt-4 register_style">
 			<h1> User Login</h1>
 			<p>Please login if you are an existing user</p>
