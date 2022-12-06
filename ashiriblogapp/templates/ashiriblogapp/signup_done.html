@@ -18,7 +18,6 @@
 
 {% block body %}
 <body>
-<img class="page" src="{% static 'ashiriblogapp/images/black image.jpg' %}" alt="">
 	<div class="container">
 		<h3>Welcome, {{new_user.username}}</h3>
 		<p>Your account has been create, you can  <a href="{% url 'user_login' %}">Login here</a></p>
