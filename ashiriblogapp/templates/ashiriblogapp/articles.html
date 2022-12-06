@@ -18,7 +18,7 @@
 				color: rgb(183, 69, 151);
 
 		}
-		#img{
+		body{
 			background: url("{% static 'ashiriblogapp/images/people.jpg' %}");
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -26,7 +26,11 @@
 			height: 100%;
 			opacity: 0.2;
 		}
+	.container mt-4{
+		font-weight: bold;
+		
 
+		}
 		
 	</style>
 	
@@ -34,7 +38,7 @@
 {% endblock %}
 
 {% block body %}
-	<section id="img">
+
 		
 		<div class="container mt-4">
 				{% for blog in article_list %}
@@ -46,6 +50,6 @@
 
 				{% include 'ashiriblogapp/pagination.html' with page=article_list %}
 			</div>
-	</section>
+
 
 {% endblock %}
